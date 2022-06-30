@@ -1,0 +1,26 @@
+{
+  "name": "@codecb/rollup-plugin-strip-code",
+  "version": "0.0.1",
+  "repository": {
+    "directory": "packages/rollup-plugin-strip-code",
+    "type": "git",
+    "url": "https://github.com/code-cb/rollup-plugins.git"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "4.2.1",
+    "magic-string": "0.26.2"
+  },
+  "devDependencies": {
+    "@codecb/tsconfigs": "0.0.7",
+    "@types/node": "18.0.0",
+    "rollup": "2.75.7",
+    "typescript": "4.7.4"
+  }
+}
