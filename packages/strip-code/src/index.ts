@@ -26,8 +26,8 @@ export const stripCode = (
     'pattern' in options
       ? options.pattern
       : new RegExp(
-          `[ \t]*\/\*\s*${options.startComment}\s\*\/([\s*\S]*?)\s*${options.endComment}\s\*\/[ \t]*`,
-          'g',
+          `[ \\t]*\\/\\*+\\s*${options.startComment}\\s*\\*\\/([\\s\\S]*?)[ \\t]*\\/\\*+\\s*${options.endComment}\\s*\\*\\/[ \\t]*`,
+          'gi',
         );
 
   return {
@@ -43,3 +43,5 @@ export const stripCode = (
     },
   };
 };
+
+export default stripCode;

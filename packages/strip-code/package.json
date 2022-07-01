@@ -1,6 +1,6 @@
 {
   "name": "@codecb/rollup-plugin-strip-code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "directory": "packages/rollup-plugin-strip-code",
     "type": "git",
@@ -11,7 +11,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "rm -rf dist && tsc"
   },
   "dependencies": {
     "@rollup/pluginutils": "4.2.1",
