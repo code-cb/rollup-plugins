@@ -1,9 +1,9 @@
 {
-  "name": "@codecb/rollup-plugin-strip-code",
+  "name": "@codecb/rollup-plugin-strip",
   "version": "0.0.2",
   "license": "MIT",
   "repository": {
-    "directory": "packages/rollup-plugin-strip-code",
+    "directory": "packages/rollup-plugin-strip",
     "type": "git",
     "url": "https://github.com/code-cb/rollup-plugins.git"
   },
@@ -15,7 +15,10 @@
     "build": "rm -rf dist && tsc"
   },
   "dependencies": {
+    "@codecb/estree-traverse": "0.0.2",
     "@rollup/pluginutils": "4.2.1",
+    "@types/esprima": "4.0.3",
+    "esprima": "4.0.1",
     "magic-string": "0.26.2"
   },
   "devDependencies": {

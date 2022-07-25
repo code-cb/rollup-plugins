@@ -7,6 +7,9 @@
     "format": "prettier --write '**/*.{js,jsx,ts,tsx}'"
   },
   "devDependencies": {
-    "prettier": "2.7.1"
-  }
+    "@codecb/prettierrc": "0.0.1",
+    "prettier": "2.7.1",
+    "ts-node": "10.9.1"
+  },
+  "prettier": "@codecb/prettierrc"
 }
