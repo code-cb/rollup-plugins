@@ -21,10 +21,10 @@ export class SourceCode {
     this.magicString.addSourcemapLocation(range![1]);
   }
 
-  generateSourceDescription(): SourceDescription {
+  generateSourceDescription(sourcemap: boolean | undefined): SourceDescription {
     return {
       code: this.magicString.toString(),
-      map: this.magicString.generateMap(),
+      map: sourcemap ? this.magicString.generateMap() : null,
     };
   }
 

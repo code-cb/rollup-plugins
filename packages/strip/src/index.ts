@@ -114,7 +114,9 @@ export const strip = ({
         }
       }
 
-      return !sourceCode.edited ? null : sourceCode.generateSourceDescription();
+      return !sourceCode.edited
+        ? null
+        : sourceCode.generateSourceDescription(sourcemap);
     },
   };
 };

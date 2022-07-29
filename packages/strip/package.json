@@ -1,18 +1,19 @@
 {
   "name": "@codecb/rollup-plugin-strip",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "repository": {
-    "directory": "packages/rollup-plugin-strip",
+    "directory": "packages/strip",
     "type": "git",
     "url": "https://github.com/code-cb/rollup-plugins.git"
   },
-  "main": "dist/index.js",
   "files": [
     "dist"
   ],
+  "main": "dist/index.js",
   "scripts": {
-    "build": "rm -rf dist && tsc"
+    "build": "rm -rf dist && tsc",
+    "prepublishOnly": "yarn build"
   },
   "dependencies": {
     "@codecb/estree-traverse": "0.0.2",
