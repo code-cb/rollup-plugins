@@ -88,17 +88,10 @@ export const strip = ({
 
       for (const { node, parent, skipChildren } of traverse(program)) {
         if (sourcemap) sourceCode.addSourceMapRange(node);
-        if (node.type === 'DebuggerStatement' && removeDebugger) {
-          console.log(`Found ${node.type} at ${node.range}`);
-          sourceCode.removeStatement(node, parent);
-          skipChildren();
-          continue;
-        }
         if (
-          node.type === 'LabeledStatement' &&
-          labels.includes(node.label.name)
+          (node.type === 'DebuggerStatement' && removeDebugger) ||
+          (node.type === 'LabeledStatement' && labels.includes(node.label.name))
         ) {
-          console.log(`Found ${node.type} ${node.label.name} at ${node.range}`);
           sourceCode.removeStatement(node, parent);
           skipChildren();
           continue;
@@ -106,7 +99,6 @@ export const strip = ({
         if (node.type === 'CallExpression') {
           const functionName = flattenFunctionName(node.callee);
           if (functionName && functionsRegex.test(functionName)) {
-            console.log(`Found ${node.type} ${functionName} at ${node.range}`);
             sourceCode.removeExpression(node, parent);
             skipChildren();
             continue;
