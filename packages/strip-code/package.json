@@ -1,6 +1,6 @@
 {
   "name": "@codecb/rollup-plugin-strip-code",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "repository": {
     "directory": "packages/strip-code",

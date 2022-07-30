@@ -89,10 +89,10 @@
   resolved "https://registry.npmjs.org/@types/estree/-/estree-1.0.0.tgz#5fb2e536c1ae9bf35366eed879e827fa59ca41c2"
   integrity sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==
 
-"@types/mime@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@types/mime/-/mime-2.0.3.tgz#c893b73721db73699943bfc3653b1deb7faa4a3a"
-  integrity sha512-Jus9s4CDbqwocc5pOAnh8ShfrnMcPHuJYzVcSUU7lrh8Ni5HuIqX3oilL86p3dlTrk0LzHRCgA/GQ7uNCw6l2Q==
+"@types/mime@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/@types/mime/-/mime-3.0.0.tgz#e9a9903894405c6a6551f1774df4e64d9804d69c"
+  integrity sha512-fccbsHKqFDXClBZTDLA43zl0+TbxyIwyzIzwwhvoJvhNjOErCdeX2xJbURimv2EbSVUGav001PaCJg4mZxMl4w==
 
 "@types/node@18.6.2":
   version "18.6.2"
