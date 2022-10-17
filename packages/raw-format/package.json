@@ -1,9 +1,9 @@
 {
-  "name": "@codecb/rollup-plugin-json",
+  "name": "@codecb/rollup-plugin-raw-format",
   "version": "0.0.1",
   "license": "MIT",
   "repository": {
-    "directory": "packages/url",
+    "directory": "packages/raw-format",
     "type": "git",
     "url": "https://github.com/code-cb/rollup-plugins.git"
   },
@@ -16,6 +16,9 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^5.0.0"
+    "magic-string": "^0.26.0" 
+  },
+  "peerDependencies": {
+    "rollup": "^3.0.0"
   }
 }
