@@ -16,14 +16,13 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@rollup/pluginutils": "4.2.1",
-    "mime": "3.0.0"
+    "@rollup/pluginutils": "^5.0.0",
+    "mime": "^3.0.0"
   },
   "devDependencies": {
-    "@codecb/tsconfigs": "0.0.8",
-    "@types/mime": "3.0.0",
-    "@types/node": "18.6.2",
-    "rollup": "2.77.2",
-    "typescript": "4.7.4"
+    "@types/mime": "^3.0.0"
+  },
+  "peerDependencies": {
+    "rollup": "^3.0.0"
   }
 }
