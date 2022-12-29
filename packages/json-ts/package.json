@@ -1,14 +1,14 @@
 {
-  "name": "@codecb/rollup-plugin-strip",
-  "version": "0.0.4",
-  "description": "A rewrite of @rollup/plugin-strip, using a new, type-safe AST traversal library",
+  "name": "@codecb/rollup-plugin-json-ts",
+  "version": "0.0.3",
+  "description": "An alternative of @rollup/plugin-json that works better with rollup-plugin-ts",
   "license": "MIT",
   "author": {
     "email": "icodemyownlife@gmail.com",
     "name": "ICodeMyOwnLife"
   },
   "repository": {
-    "directory": "packages/strip",
+    "directory": "packages/json-ts",
     "type": "git",
     "url": "https://github.com/code-cb/rollup-plugins"
   },
@@ -23,11 +23,7 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@codecb/estree-traverse": "0.0.2",
-    "@rollup/pluginutils": "^5.0",
-    "@types/esprima": "^4.0",
-    "esprima": "^4.0",
-    "magic-string": "^0.27.0"
+    "@rollup/pluginutils": "^5.0"
   },
   "peerDependencies": {
     "rollup": "^3.9"

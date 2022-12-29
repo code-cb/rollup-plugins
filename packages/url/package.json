@@ -1,7 +1,12 @@
 {
   "name": "@codecb/rollup-plugin-url",
   "version": "0.0.1",
+  "description": "A rewrite of @rollup/plugin-url, ported to TypeScript",
   "license": "MIT",
+  "author": {
+    "email": "icodemyownlife@gmail.com",
+    "name": "ICodeMyOwnLife"
+  },
   "repository": {
     "directory": "packages/url",
     "type": "git",
@@ -11,18 +16,20 @@
     "dist"
   ],
   "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": "./dist/index.js",
   "scripts": {
     "build": "rm -rf dist && tsc",
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^5.0.0",
-    "mime": "^3.0.0"
+    "@rollup/pluginutils": "^5.0",
+    "mime": "^3.0"
   },
   "devDependencies": {
-    "@types/mime": "^3.0.0"
+    "@types/mime": "^3.0"
   },
   "peerDependencies": {
-    "rollup": "^3.0.0"
+    "rollup": "^3.9"
   }
 }

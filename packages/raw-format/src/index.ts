@@ -27,3 +27,5 @@ export const rawFormat = ({ sourcemap }: RawFormatOptions): Plugin => ({
     };
   },
 });
+
+export default rawFormat;

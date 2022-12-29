@@ -20,19 +20,19 @@ export interface JsonOptions
 }
 
 export const json = ({
-  compact,
+  compact = false,
   exclude,
   include,
-  indent = '\t',
-  namedExports,
-  preferConst,
+  indent = '  ',
+  namedExports = false,
+  preferConst = true,
 }: JsonOptions = {}): Plugin => {
   const filter = createFilter(include, exclude);
 
   return {
     name: 'json',
     transform(code, id) {
-      if (id.slice(-5) !== '.json' || !filter(id)) return null;
+      if (!/\.json$/i.test(id) || !filter(id)) return null;
       try {
         const parsed = JSON.parse(code);
         return {

@@ -16,6 +16,6 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^5.0.0"
+    "@rollup/pluginutils": "^5.0"
   }
 }

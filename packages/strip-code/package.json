@@ -1,25 +1,32 @@
 {
   "name": "@codecb/rollup-plugin-strip-code",
   "version": "0.0.5",
+  "description": "A rewrite of rollup-plugin-strip-code, ported to TypeScript",
   "license": "MIT",
+  "author": {
+    "email": "icodemyownlife@gmail.com",
+    "name": "ICodeMyOwnLife"
+  },
   "repository": {
     "directory": "packages/strip-code",
     "type": "git",
-    "url": "https://github.com/code-cb/rollup-plugins.git"
+    "url": "https://github.com/code-cb/rollup-plugins"
   },
   "files": [
-    "dist"
+    "./dist"
   ],
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": "./dist/index.js",
   "scripts": {
     "build": "rm -rf dist && tsc",
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^5.0.0",
-    "magic-string": "^0.26.0"
+    "@rollup/pluginutils": "^5.0",
+    "magic-string": "^0.27.0"
   },
   "peerDependencies": {
-    "rollup": "^3.0.0"
+    "rollup": "^3.9"
   }
 }
